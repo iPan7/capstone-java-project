@@ -18,7 +18,7 @@ public class ActivitiesRatingController {
         this.client = client;
     }
 
-    @GetMapping('/rating')
+    @GetMapping("/rating")
     public String getRating() {
         return client.getRating();
     }
