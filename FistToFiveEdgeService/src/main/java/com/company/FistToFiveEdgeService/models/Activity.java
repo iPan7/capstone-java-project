@@ -1,27 +1,14 @@
-package com.company.activitiesratings.model;
+package com.company.FistToFiveEdgeService.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
-@Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-@Table(name="activity")
 public class Activity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
     private Integer id;
-    @NotEmpty(message = "You must supply an activity name")
     private String activityName;
-    @NotEmpty(message = "You must supply a file path")
     private String filePath;
-    @NotEmpty(message = "You must supply a description")
     private String activityDescription;
-    @OneToMany(mappedBy = "activityId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Rating> ratings;
 
     public Activity(Integer id, String activityName, String filePath, String activityDescription, List<Rating> ratings) {
