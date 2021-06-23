@@ -1,6 +1,6 @@
-package com.company.ActivitiesRatings.repository;
+package com.company.activitiesratings.repository;
 
-import com.company.ActivitiesRatings.model.Rating;
+import com.company.activitiesratings.model.Rating;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RatingRepository extends JpaRepository<Rating, Integer> {

@@ -1,4 +1,4 @@
-package com.company.ActivitiesRatings;
+package com.company.activitiesratings;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

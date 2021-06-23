@@ -1,4 +1,4 @@
-package com.company.ActivitiesRatings.model;
+package com.company.activitiesratings.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

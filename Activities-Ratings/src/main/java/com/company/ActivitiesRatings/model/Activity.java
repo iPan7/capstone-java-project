@@ -1,4 +1,4 @@
-package com.company.ActivitiesRatings.model;
+package com.company.activitiesratings.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -22,6 +22,17 @@ public class Activity {
     private String activityDescription;
     @OneToMany(mappedBy = "activityId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Rating> ratings;
+
+    public Activity(Integer id, String activityName, String filePath, String activityDescription, Set<Rating> ratings) {
+        this.id = id;
+        this.activityName = activityName;
+        this.filePath = filePath;
+        this.activityDescription = activityDescription;
+        this.ratings = ratings;
+    }
+
+    public Activity() {
+    }
 
     public Integer getId() {
         return id;
