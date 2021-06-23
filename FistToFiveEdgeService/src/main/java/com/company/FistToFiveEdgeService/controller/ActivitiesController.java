@@ -3,7 +3,6 @@ package com.company.FistToFiveEdgeService.controller;
 import com.company.FistToFiveEdgeService.models.Activity;
 import com.company.FistToFiveEdgeService.util.feign.ActivitiesRatingClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
