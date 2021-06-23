@@ -10,13 +10,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RefreshScope
 @RequestMapping("/activity")
 public class ActivitiesController {
 
     @Autowired
     private final ActivitiesRatingClient client;
-
 
     public ActivitiesController(ActivitiesRatingClient client) {
         this.client = client;
