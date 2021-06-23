@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -21,9 +22,9 @@ public class Activity {
     @NotEmpty(message = "You must supply a description")
     private String activityDescription;
     @OneToMany(mappedBy = "activityId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<Rating> ratings;
+    private List<Rating> ratings;
 
-    public Activity(Integer id, String activityName, String filePath, String activityDescription, Set<Rating> ratings) {
+    public Activity(Integer id, String activityName, String filePath, String activityDescription, List<Rating> ratings) {
         this.id = id;
         this.activityName = activityName;
         this.filePath = filePath;
@@ -66,11 +67,11 @@ public class Activity {
         this.activityDescription = activityDescription;
     }
 
-    public Set<Rating> getRatings() {
+    public List<Rating> getRatings() {
         return ratings;
     }
 
-    public void setRatings(Set<Rating> ratings) {
+    public void setRatings(List<Rating> ratings) {
         this.ratings = ratings;
     }
 
