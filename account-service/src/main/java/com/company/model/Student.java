@@ -14,7 +14,6 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @NotEmpty(message = "You must supply the instructor id of the class")
     private Integer instructorId;
     @NotEmpty(message = "You must supply an activity name")
     private String firstName;
