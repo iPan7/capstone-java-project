@@ -2,6 +2,7 @@ package com.company.activitiesratings.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -15,9 +16,8 @@ public class Rating {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @NotEmpty(message = "You must select an activity to rate")
     private Integer activityId;
-    @Size(min = 0, max = 5, message = "You must choose between 0 and 5")
+    @Range(min = 0, max = 5, message = "You must choose between 0 and 5")
     private Integer rating;
     @NotEmpty(message = "You must include your username")
     private String username;
