@@ -1,6 +1,5 @@
 package com.company.activitiesratings.controller;
 
-        import com.company.activitiesratings.controller.ActivityController;
         import com.company.activitiesratings.model.Activity;
         import com.company.activitiesratings.model.Rating;
         import com.company.activitiesratings.service.ActivitiesApiServiceLayer;
@@ -23,7 +22,6 @@ package com.company.activitiesratings.controller;
         import java.util.ArrayList;
         import java.util.List;
 
-        import static org.junit.Assert.*;
         import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
         import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
         import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -49,15 +47,11 @@ public class ActivityControllerTest {
 
     @Before
     public void setup() throws Exception {
-        Rating Bob = new Rating();
-        Rating Jim = new Rating();
         Activity.Weekday weekday1 = Activity.Weekday.valueOf("SUNDAY");
         Activity.Status status1 = Activity.Status.valueOf("PLANNED");
         Activity.Weekday weekday2 = Activity.Weekday.valueOf("MONDAY");
         Activity.Status status2 = Activity.Status.valueOf("COMPLETED");
         List<Rating> userRatings = new ArrayList<Rating>();
-        userRatings.add(Bob);
-        userRatings.add(Jim);
         Running = new Activity(1, "Running", "Module 4, Day 3, Activity 2", "This is a test description", status1, weekday1, userRatings);
 
         Swimming = new Activity(2, "Swimming", "Module 1, Day 2, Activity 3", "This is another test description", status2, weekday2, userRatings);
@@ -117,7 +111,7 @@ public class ActivityControllerTest {
         Activity.Status status2 = Activity.Status.valueOf("COMPLETED");
 
         Activity Bison = new Activity(1, "Running", "Module 4, Day 3, Activity 2", "This is a test description", status1, weekday1, userRatings);
-        Activity expectedBison = new Activity(2, "Swimming", "Module 1, Day 2, Activity 3", "This is another test description", status2, weekday2, userRatings);
+        Activity expectedBison = new Activity(1, "Running", "Module 4, Day 3, Activity 2", "This is a test description", status1, weekday1, userRatings);
         String inputBison = mapper.writeValueAsString(Bison);
         String outputBison = mapper.writeValueAsString(expectedBison);
 
