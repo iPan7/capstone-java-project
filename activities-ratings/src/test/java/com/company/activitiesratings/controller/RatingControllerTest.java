@@ -1,7 +1,5 @@
 package com.company.activitiesratings.controller;
 
-import static org.junit.Assert.*;
-
 import com.company.activitiesratings.model.Rating;
 import com.company.activitiesratings.service.RatingsApiServiceLayer;
 import com.fasterxml.jackson.databind.ObjectMapper;
