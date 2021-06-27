@@ -32,6 +32,13 @@ public class Instructor {
         this.students = students;
     }
 
+    public Instructor(String firstName, String lastName, String className, List<Student> students) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.className = className;
+        this.students = students;
+    }
+
     public Instructor(){}
 
     public Integer getId() {
