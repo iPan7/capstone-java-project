@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a780291-b8fc-4b80-bfb3-5ec2ac1cf0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/controller/RatingControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/service/ActivitiesApiServiceLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/activitiesratings/model/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/activitiesratings/model/Rating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/controller/ActivityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/controller/ActivityControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +49,26 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company.activitiesratings.service" />
       <recent name="com.company.activitiesratings.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RatingControllerTest.shouldReturn422WithInvalidBody">
+  <component name="RunManager" selected="JUnit.ActivitiesApiServiceLayerTest">
+    <configuration name="ActivitiesApiServiceLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activities-ratings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.activitiesratings.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.activitiesratings.service" />
+      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.service.ActivitiesApiServiceLayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ActivityControllerTest.shouldCreateActivityOnPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activities-ratings" />
       <extension name="coverage">
@@ -102,22 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RatingControllerTest,shouldReturn422WithInvalidBody and 6 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activities-ratings" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldReturn422WithInvalidBody" />
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldBeStatus200ForNonExistentRatingId" />
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldReturnAllRatingsInCollection" />
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldReturnRatingById" />
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldCreateRatingOnPostRequest" />
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldUpdateByIdAndReturn204StatusCode" />
-        <pattern testClass="com.company.activitiesratings.controller.RatingControllerTest,shouldDeleteByIdAndReturn204StatusCode" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RatingControllerTest.shouldReturn422WithInvalidBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activities-ratings" />
       <extension name="coverage">
@@ -136,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivitiesApiServiceLayerTest" />
         <item itemvalue="JUnit.RatingControllerTest.shouldReturn422WithInvalidBody" />
         <item itemvalue="JUnit.ActivityControllerTest.shouldReturn422WithInvalidBody" />
         <item itemvalue="JUnit.RatingControllerTest" />
         <item itemvalue="JUnit.ActivityControllerTest.shouldCreateActivityOnPostRequest" />
-        <item itemvalue="JUnit.RatingControllerTest,shouldReturn422WithInvalidBody and 6 more" />
       </list>
     </recent_temporary>
   </component>
