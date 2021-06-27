@@ -22,6 +22,13 @@ public class Rating {
     @NotEmpty(message = "You must include your username")
     private String username;
 
+    public Rating(Integer id, Integer activityId, Integer rating, String username) {
+        this.id = id;
+        this.activityId = activityId;
+        this.rating = rating;
+        this.username = username;
+    }
+
     public Integer getId() {
         return id;
     }
