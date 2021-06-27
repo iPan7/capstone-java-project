@@ -12,6 +12,23 @@ import java.util.Set;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Table(name="activity")
 public class Activity {
+
+    public enum Status {
+        PLANNED,
+        INPROGRESS,
+        COMPLETED
+    }
+
+    public enum Weekday {
+        SUNDAY,
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
@@ -21,14 +38,18 @@ public class Activity {
     private String filePath;
     @NotEmpty(message = "You must supply a description")
     private String activityDescription;
+    private Status status;
+    private Weekday weekday;
     @OneToMany(mappedBy = "activityId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Rating> ratings;
 
-    public Activity(Integer id, String activityName, String filePath, String activityDescription, List<Rating> ratings) {
+    public Activity(Integer id, String activityName, String filePath, String activityDescription, Status status, Weekday weekday, List<Rating> ratings) {
         this.id = id;
         this.activityName = activityName;
         this.filePath = filePath;
         this.activityDescription = activityDescription;
+        this.status = status;
+        this.weekday = weekday;
         this.ratings = ratings;
     }
 
@@ -67,6 +88,22 @@ public class Activity {
         this.activityDescription = activityDescription;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public Weekday getWeekday() {
+        return weekday;
+    }
+
+    public void setWeekday(Weekday weekday) {
+        this.weekday = weekday;
+    }
+
     public List<Rating> getRatings() {
         return ratings;
     }
@@ -80,12 +117,12 @@ public class Activity {
         if (this == o) return true;
         if (!(o instanceof Activity)) return false;
         Activity activity = (Activity) o;
-        return Objects.equals(getId(), activity.getId()) && Objects.equals(getActivityName(), activity.getActivityName()) && Objects.equals(getFilePath(), activity.getFilePath()) && Objects.equals(getActivityDescription(), activity.getActivityDescription()) && Objects.equals(getRatings(), activity.getRatings());
+        return Objects.equals(getId(), activity.getId()) && Objects.equals(getActivityName(), activity.getActivityName()) && Objects.equals(getFilePath(), activity.getFilePath()) && Objects.equals(getActivityDescription(), activity.getActivityDescription()) && getStatus() == activity.getStatus() && getWeekday() == activity.getWeekday() && Objects.equals(getRatings(), activity.getRatings());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getActivityName(), getFilePath(), getActivityDescription(), getRatings());
+        return Objects.hash(getId(), getActivityName(), getFilePath(), getActivityDescription(), getStatus(), getWeekday(), getRatings());
     }
 
     @Override
@@ -95,6 +132,8 @@ public class Activity {
                 ", activityName='" + activityName + '\'' +
                 ", filePath='" + filePath + '\'' +
                 ", activityDescription='" + activityDescription + '\'' +
+                ", status=" + status +
+                ", weekday=" + weekday +
                 ", ratings=" + ratings +
                 '}';
     }
