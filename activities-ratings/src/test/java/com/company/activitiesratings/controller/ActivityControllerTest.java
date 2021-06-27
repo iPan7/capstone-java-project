@@ -47,14 +47,6 @@ public class ActivityControllerTest {
     private List<Activity> allActivities = new ArrayList<>();
     private String allActivitiesJson;
 
-    //         this.id = id;
-    //        this.activityName = activityName;
-    //        this.filePath = filePath;
-    //        this.activityDescription = activityDescription;
-    //        this.status = status;
-    //        this.weekday = weekday;
-    //        this.ratings = ratings;
-
     @Before
     public void setup() throws Exception {
         Rating Bob = new Rating();
@@ -73,7 +65,7 @@ public class ActivityControllerTest {
         runningJson = mapper.writeValueAsString(Running);
 
         allActivities.add(Running);
-//        allActivities.add(Swimming);
+        allActivities.add(Swimming);
 
         allActivitiesJson = mapper.writeValueAsString(allActivities);
     }
