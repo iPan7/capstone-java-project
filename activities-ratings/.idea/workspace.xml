@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a780291-b8fc-4b80-bfb3-5ec2ac1cf0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/service/ActivitiesApiServiceLayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/service/RatingsApiServiceLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/service/ActivitiesApiServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/activitiesratings/service/ActivitiesApiServiceLayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="com.company.activitiesratings.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ActivitiesApiServiceLayerTest">
+  <component name="RunManager" selected="JUnit.RatingsApiServiceLayerTest">
     <configuration name="ActivitiesApiServiceLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activities-ratings" />
       <extension name="coverage">
@@ -65,22 +66,6 @@
       <option name="PACKAGE_NAME" value="com.company.activitiesratings.service" />
       <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.service.ActivitiesApiServiceLayerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActivityControllerTest.shouldCreateActivityOnPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activities-ratings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.activitiesratings.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.activitiesratings.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.controller.ActivityControllerTest" />
-      <option name="METHOD_NAME" value="shouldCreateActivityOnPostRequest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,21 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RatingControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activities-ratings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.activitiesratings.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.activitiesratings.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.controller.RatingControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RatingControllerTest.shouldReturn422WithInvalidBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activities-ratings" />
       <extension name="coverage">
@@ -132,13 +102,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RatingsApiServiceLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activities-ratings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.activitiesratings.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.activitiesratings.service" />
+      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.service.RatingsApiServiceLayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RatingsApiServiceLayerTest.shouldReturnAllRatings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activities-ratings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.activitiesratings.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.activitiesratings.service" />
+      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.service.RatingsApiServiceLayerTest" />
+      <option name="METHOD_NAME" value="shouldReturnAllRatings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RatingsApiServiceLayerTest" />
+        <item itemvalue="JUnit.RatingsApiServiceLayerTest.shouldReturnAllRatings" />
         <item itemvalue="JUnit.ActivitiesApiServiceLayerTest" />
         <item itemvalue="JUnit.RatingControllerTest.shouldReturn422WithInvalidBody" />
         <item itemvalue="JUnit.ActivityControllerTest.shouldReturn422WithInvalidBody" />
-        <item itemvalue="JUnit.RatingControllerTest" />
-        <item itemvalue="JUnit.ActivityControllerTest.shouldCreateActivityOnPostRequest" />
       </list>
     </recent_temporary>
   </component>

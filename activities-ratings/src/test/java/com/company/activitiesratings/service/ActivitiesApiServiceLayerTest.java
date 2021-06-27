@@ -63,7 +63,7 @@ public class ActivitiesApiServiceLayerTest {
     }
 
     @Test
-    public void shouldReturnAllActivitys() {
+    public void shouldReturnAllActivities() {
         // Arrange
         List<Activity> expectedOutput = new ArrayList<Activity>();
         expectedOutput.add(Running);
