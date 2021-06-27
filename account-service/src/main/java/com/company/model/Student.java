@@ -30,6 +30,13 @@ public class Student {
         this.studentBio = studentBio;
     }
 
+    public Student(Integer instructorId, String firstName, String lastName, String studentBio) {
+        this.instructorId = instructorId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.studentBio = studentBio;
+    }
+
     public Student(){}
 
     public Integer getId() {
