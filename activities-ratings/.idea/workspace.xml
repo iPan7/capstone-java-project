@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a780291-b8fc-4b80-bfb3-5ec2ac1cf0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../account-service/src/test/java/com/company/controller/StudentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../account-service/src/test/java/com/company/repository/InstructorRepositoryTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/company/SpringFoxConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/activitiesratings/SpringFoxConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/company/model/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/company/model/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/company/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/company/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/company/service/InstructorApiServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/company/service/InstructorApiServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/test/java/com/company/controller/InstructorControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/test/java/com/company/controller/InstructorControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/test/java/com/company/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/test/java/com/company/controller/StudentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/test/java/com/company/service/InstructorApiServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/test/java/com/company/service/InstructorApiServiceLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/test/java/com/company/service/StudentApiServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/test/java/com/company/service/StudentApiServiceLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/test/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +52,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,8 +65,24 @@
       <recent name="com.company.activitiesratings.service" />
       <recent name="com.company.activitiesratings.controller" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.activitiesratings" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.RatingsApiServiceLayerTest">
+  <component name="RunManager" selected="Application.ActivitiesRatingsApplication">
+    <configuration name="ActivitiesRatingsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.ActivitiesRatingsApplication" />
+      <module name="activities-ratings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.activitiesratings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ActivitiesApiServiceLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activities-ratings" />
       <extension name="coverage">
@@ -66,22 +94,6 @@
       <option name="PACKAGE_NAME" value="com.company.activitiesratings.service" />
       <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.service.ActivitiesApiServiceLayerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActivityControllerTest.shouldReturn422WithInvalidBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activities-ratings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.activitiesratings.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.activitiesratings.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.company.activitiesratings.controller.ActivityControllerTest" />
-      <option name="METHOD_NAME" value="shouldReturn422WithInvalidBody" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ActivitiesRatingsApplication" />
         <item itemvalue="JUnit.RatingsApiServiceLayerTest" />
         <item itemvalue="JUnit.RatingsApiServiceLayerTest.shouldReturnAllRatings" />
         <item itemvalue="JUnit.ActivitiesApiServiceLayerTest" />
         <item itemvalue="JUnit.RatingControllerTest.shouldReturn422WithInvalidBody" />
-        <item itemvalue="JUnit.ActivityControllerTest.shouldReturn422WithInvalidBody" />
       </list>
     </recent_temporary>
   </component>

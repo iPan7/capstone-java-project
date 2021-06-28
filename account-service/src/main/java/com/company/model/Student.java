@@ -11,6 +11,13 @@ import java.util.Objects;
 @Table(name="student")
 public class Student {
 
+    public Student(Integer instructorId, String firstName, String lastName, String studentBio) {
+        this.instructorId = instructorId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.studentBio = studentBio;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
@@ -24,13 +31,6 @@ public class Student {
 
     public Student(Integer id, Integer instructorId, String firstName, String lastName, String studentBio) {
         this.id = id;
-        this.instructorId = instructorId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.studentBio = studentBio;
-    }
-
-    public Student(Integer instructorId, String firstName, String lastName, String studentBio) {
         this.instructorId = instructorId;
         this.firstName = firstName;
         this.lastName = lastName;

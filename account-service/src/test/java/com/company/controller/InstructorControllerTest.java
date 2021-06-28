@@ -15,17 +15,15 @@ import org.springframework.cloud.autoconfigure.RefreshAutoConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import static org.mockito.BDDMockito.given;
-
 import javax.ws.rs.core.MediaType;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(InstructorController.class)
@@ -104,7 +102,7 @@ public class InstructorControllerTest {
 
     @Test
     public void shouldCreateInstructorOnPostRequest() throws Exception {
-        Instructor Bison = new Instructor("Bison", "Max", "Fighting 101", null);
+        Instructor Bison = new Instructor(1,"Bison", "Max", "Fighting 101", null);
         Instructor expectedBison = new Instructor(1, "Bison", "Max", "Fighting 101", null);
         String inputBison = mapper.writeValueAsString(Bison);
         String outputBison = mapper.writeValueAsString(expectedBison);
